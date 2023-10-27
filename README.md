@@ -16,4 +16,4 @@ To get full extended data, multiple queries should be performed. Same applies to
 - General flow:
   - Create field with type document, add/delete/update fields
 
-#### There are flows, something may work incorrectly, but the general idea is implemented
+#### There are flaws, something may work incorrectly, but the general idea is implemented
