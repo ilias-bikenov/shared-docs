@@ -1,7 +1,7 @@
 const express = require("express");
 const { mockAuthMiddleware } = require("./middleware/mockAuth");
 const { default: mongoose } = require("mongoose");
-const { docsRouter, fieldsRouter, usersRouter } = require("./routers");
+const { fieldsRouter, usersRouter } = require("./routers");
 
 const app = express();
 const port = 3000;
@@ -22,7 +22,6 @@ db.once("open", function () {
 app.use(apiBase, usersRouter);
 app.use(mockAuthMiddleware);
 
-app.use(apiBase, docsRouter);
 app.use(apiBase, fieldsRouter);
 
 app.listen(port, () => {
